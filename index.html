@@ -51,6 +51,10 @@
             + region
             + '" which has the code: '
             + code.toUpperCase();
+          if (code.toUpperCase() in dict) {
+            var message = 'С вами случится '
+              + dict[code.toUpperCase()];
+          }
 
           alert(message);
         }
