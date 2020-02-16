@@ -47,10 +47,7 @@
         selectedRegions: null,
         showTooltip: true,
         onRegionClick: function (element, code, region) {
-          var message = 'You clicked "'
-            + region
-            + '" which has the code: '
-            + code.toUpperCase();
+          var message = 'К сожалению по данному региону мы еще не собрали достаточно сведений.';
           if (code.toUpperCase() in dict) {
             var message = dict[code.toUpperCase()];
           }
